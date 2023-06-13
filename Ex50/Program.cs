@@ -27,7 +27,7 @@ else
     Console.WriteLine($"Число индекса строки {rows} и индекса столбца {colums} равно {numbers[rows ,colums]}");
 }
 
-PrintArray(numbers);
+PrintMatrix(numbers);
 
 void GetMatrix(int[,] array)
 {
@@ -40,16 +40,14 @@ void GetMatrix(int[,] array)
         }
 }
 
-void PrintArray(int[,] array)
+void PrintMatrix(int[,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++) // строчки
     {
-        Console.Write("[ ");
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++) // столбцы
         {
-            Console.Write(array[i,j] + " ");
-        }   
-        Console.Write("]");
-        Console.WriteLine(""); 
+            Console.Write(array[i, j] + "\t");
+        }
+        Console.WriteLine();
     }
 }

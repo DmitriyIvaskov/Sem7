@@ -15,7 +15,7 @@ int colums = Convert.ToInt32(Console.ReadLine());
 
 double[,] numbers = new double[rows, colums];
 GetMatrix(numbers);
-PrintArray(numbers);
+PrintMatrix(numbers);
 
 // Метод, который печатает массив
 void GetMatrix(double[,] array)
@@ -29,16 +29,14 @@ void GetMatrix(double[,] array)
     }
 }
 
-//  Функция вывода массива в терминал
-void PrintArray(double[,] array)
+void PrintMatrix(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + "\t");
         }
         Console.WriteLine();
     }
-    Console.WriteLine();
 }
