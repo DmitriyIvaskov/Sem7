@@ -9,10 +9,10 @@ Console.Write("Введите количество строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите количество cтолбцов: ");
-int columns = Convert.ToInt32(Console.ReadLine());
+int colums = Convert.ToInt32(Console.ReadLine());
 
-int[,] resMatrix = GetMatrix(rows, columns);
-// rows=3, columns=4 => таблица из 3 строк и 4 столбцов, элемент: число от 0 до 10 включительно
+int[,] resMatrix = GetMatrix(rows, colums);
+// rows=3, colums=4 => таблица из 3 строк и 4 столбцов, элемент: число от 0 до 10 включительно
 PrintMatrix(resMatrix); // PrintMatrix(матрица)
 
 int[,] GetMatrix(int m, int n)
