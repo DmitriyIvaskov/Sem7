@@ -29,7 +29,7 @@ void GetMatrix(double[,] array)
     }
 }
 
-
+//  Функция вывода массива в терминал
 void PrintArray(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
